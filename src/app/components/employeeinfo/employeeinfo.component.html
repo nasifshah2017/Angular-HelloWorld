@@ -1,0 +1,17 @@
+<!-- 3 different buttons for 3 different employees, and when the user clicks on the 
+buttons the data is retrieved from the service and displayed on the UI -->
+
+<button type="button" name="button" (click)="getInfoFromServiceClass1()">Employee1</button>
+<ul class="list-group">
+    <li *ngFor="let info of infoReceived1" class="list-group-item">{{info}}</li>
+</ul>
+<pre></pre>
+<button type="button" name="button" (click)="getInfoFromServiceClass2()">Employee2</button>
+<ul class="list-group">
+    <li *ngFor="let info of infoReceived2" class="list-group-item">{{info}}</li>
+</ul>
+<pre></pre>
+<button type="button" name="button" (click)="getInfoFromServiceClass3()">Employee3</button>
+<ul>
+    <li *ngFor="let info of infoReceived3" class="list-group-item">{{info}}</li>
+</ul>
